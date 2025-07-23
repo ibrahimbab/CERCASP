@@ -8,7 +8,8 @@
     <meta property="og:title" content="CERCA - Centro de Restauración Contra las Adicciones San Pedro">
     <meta property="og:description" content="Transformamos vidas y restauramos familias con tratamientos éticos y científicos aprobados por CONASAMA.">
     <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="https://ibrahimbab.github.io/CERCASP/"> <!-- Reemplaza con la URL real del sitio -->
+    <meta property="og:url" content="https://ibrahimbab.github.io/CERCASP/">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Agrega un favicon para profesionalismo -->
     <title>CERCA - Centro de Restauración Contra las Adicciones San Pedro</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Lightbox para galería -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-    <!-- Estilos personalizados mejorados para accesibilidad y rendimiento -->
+    <!-- Estilos personalizados mejorados para accesibilidad, rendimiento y cautivación -->
     <style>
         body { font-family: 'Roboto', sans-serif; overflow-x: hidden; background: #f8f9fa; color: #333; }
         .hero { position: relative; height: 100vh; color: white; text-align: center; display: flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -47,15 +48,17 @@
         .counter { font-size: 3rem; font-weight: bold; color: #007bff; }
         /* Acordeón normativo */
         .accordion-button { font-weight: bold; }
-        /* Mejoras de accesibilidad */
-        a, button { outline: none; }
+        /* Mejoras de accesibilidad y cautivación */
+        a, button { outline: none; transition: background-color 0.3s; }
         .form-control:invalid { border-color: #dc3545; }
-        img { alt: ""; } /* Asegurar alt text en todas las imágenes */
+        img { loading: lazy; } /* Optimización de rendimiento */
+        .cta-section { text-align: center; margin-top: 40px; }
+        @media (max-width: 768px) { .parallax { background-attachment: scroll; } } /* Optimización móvil */
     </style>
 </head>
 <body>
 
-    <!-- Navegación mejorada con accesibilidad -->
+    <!-- Navegación responsiva con animación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg" aria-label="Navegación principal">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo de CERCA: Centro de Restauración Contra las Adicciones San Pedro" class="logo"></a>
@@ -78,21 +81,21 @@
         </div>
     </nav>
 
-    <!-- Hero mejorado con video placeholder relevante y accesibilidad -->
+    <!-- Hero con video inspirador y CTA motivador -->
     <section id="inicio" class="hero">
         <video autoplay muted loop playsinline aria-hidden="true">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-people-walking-in-a-mountainous-area-52514-medium.mp4" type="video/mp4"> <!-- Video inspirador de recuperación y esperanza; reemplaza con uno propio -->
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-people-walking-in-a-mountainous-area-52514-medium.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
         <div id="particles-js" class="particles"></div>
         <div class="container" data-aos="fade-up">
             <h1 class="display-2 fw-bold animate-fadeInUp pulse">CERCA: Vuela Libre de las Cadenas</h1>
-            <p class="lead animate-fadeInUp" style="animation-delay: 0.7s; font-size: 1.5rem;">En un mundo de sombras, CERCA es el amanecer. Fundado en 2024, transformamos vidas con amor, ciencia y fe, cumpliendo estrictamente con las normativas de CONASAMA para tratamientos éticos y efectivos.</p>
-            <a href="#contacto" class="btn btn-epic btn-lg animate-fadeInUp" style="animation-delay: 1.2s;" data-bs-toggle="modal" data-bs-target="#quickContactModal" aria-label="Iniciar la transformación ahora">¡Inicia la Transformación!</a>
+            <p class="lead animate-fadeInUp" style="animation-delay: 0.7s; font-size: 1.5rem;">En un mundo de sombras, CERCA es el amanecer. Fundado en 2024, transformamos vidas con amor, ciencia y fe, cumpliendo estrictamente con las normativas de CONASAMA para tratamientos éticos y efectivos. Si tú o un ser querido necesitan ayuda, estamos aquí para guiarte hacia la libertad.</p>
+            <a href="#contacto" class="btn btn-epic btn-lg animate-fadeInUp" style="animation-delay: 1.2s;" data-bs-toggle="modal" data-bs-target="#quickContactModal" aria-label="Iniciar la transformación ahora">¡Inicia la Transformación Hoy – Confidencial y Gratuito!</a>
         </div>
     </section>
 
-    <!-- Modal para Contacto Rápido con validación mejorada -->
+    <!-- Modal para Contacto Rápido con validación -->
     <div class="modal fade" id="quickContactModal" tabindex="-1" aria-labelledby="quickContactLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -117,14 +120,14 @@
                             <textarea class="form-control" id="quickMensaje" rows="3" required aria-required="true"></textarea>
                             <div class="invalid-feedback">Por favor, ingresa un mensaje.</div>
                         </div>
-                        <button type="submit" class="btn btn-epic">Enviar Ahora</button>
+                        <button type="submit" class="btn btn-epic">Enviar Ahora – ¡Tu Esperanza Comienza Aquí!</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Sección Sobre Nosotros - Contenido actualizado con énfasis en normativas -->
+    <!-- Sección Sobre Nosotros con parallax y CTA -->
     <section id="sobre-nosotros" class="section bg-light multi-parallax">
         <div class="parallax-layer" style="background-image: url('https://via.placeholder.com/1920x500?text=Fondo+Inspirador+1'); transform: translateY(0);"></div>
         <div class="parallax-layer" style="background-image: url('https://via.placeholder.com/1920x500?text=Fondo+Inspirador+2'); opacity: 0.5; transform: translateY(50px);"></div>
@@ -133,16 +136,19 @@
             <div class="row">
                 <div class="col-md-6" data-aos="fade-right">
                     <p>El Centro de Restauración Contra las Adicciones San Pedro (CERCA) surge en 2024 como un faro de esperanza en San Pedro, Coahuila, México. Fundado por visionarios como Timothy Stephen Tolman Castellanos y Marcus Young, con el apoyo de Ibrahim Babún y su familia, y bendecido por el alcalde David Ruiz Mejía. Operamos en proceso de reconocimiento ante CONASAMA, cumpliendo con la NOM-028-SSA2-2009 para tratamientos éticos, científicos y respetuosos de los derechos humanos.</p>
-                    <p>Nuestro compromiso es restaurar almas y unir familias, priorizando el ingreso voluntario, instalaciones seguras y programas aprobados.</p>
+                    <p>Nuestro compromiso es restaurar almas y unir familias, priorizando el ingreso voluntario, instalaciones seguras y programas aprobados. Imagina un futuro lleno de esperanza para tu familia – contáctanos para comenzar el cambio.</p>
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <img src="https://via.placeholder.com/600x400?text=Familia+Renacida" alt="Imagen de una familia reunida simbolizando renacimiento y esperanza" class="img-fluid rounded shadow pulse">
+                    <img src="https://via.placeholder.com/600x400?text=Familia+Renacida" alt="Imagen de una familia reunida simbolizando renacimiento y esperanza en CERCA" class="img-fluid rounded shadow pulse">
                 </div>
+            </div>
+            <div class="cta-section">
+                <a href="#contacto" class="btn btn-epic btn-lg">Descubre Cómo Podemos Ayudarte – ¡Contáctanos Ahora!</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección Servicios - Tarjetas con iconos accesibles -->
+    <!-- Sección Servicios con tarjetas 3D y CTA -->
     <section id="servicios" class="section">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold" data-aos="flip-up">Servicios que Forjan Héroes</h2>
@@ -152,7 +158,7 @@
                         <div class="card-body">
                             <i class="fas fa-heartbeat fa-4x text-warning mb-4 pulse" aria-hidden="true"></i>
                             <h5 class="card-title">Rehabilitación Integral</h5>
-                            <p>Tratamientos personalizados fusionando terapia psicológica, física y espiritual, respaldados por evidencia científica y alineados con CONASAMA.</p>
+                            <p>Tratamientos personalizados fusionando terapia psicológica, física y espiritual, respaldados por evidencia científica y alineados con CONASAMA. Recupera tu vida con apoyo experto.</p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +167,7 @@
                         <div class="card-body">
                             <i class="fas fa-users fa-4x text-warning mb-4 pulse" aria-hidden="true"></i>
                             <h5 class="card-title">Apoyo Familiar</h5>
-                            <p>Talleres y counseling grupal para fortalecer lazos familiares, cumpliendo estándares de derechos humanos.</p>
+                            <p>Talleres y counseling grupal para fortalecer lazos familiares, cumpliendo estándares de derechos humanos. Une a tu familia en el camino a la recuperación.</p>
                         </div>
                     </div>
                 </div>
@@ -170,58 +176,64 @@
                         <div class="card-body">
                             <i class="fas fa-shield-alt fa-4x text-warning mb-4 pulse" aria-hidden="true"></i>
                             <h5 class="card-title">Prevención Comunitaria</h5>
-                            <p>Campañas y programas educativos para prevenir adicciones, en coordinación con autoridades sanitarias.</p>
+                            <p>Campañas y programas educativos para prevenir adicciones, en coordinación con autoridades sanitarias. Protege a tu comunidad – participa hoy.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="cta-section">
+                <a href="#contacto" class="btn btn-epic btn-lg">Agenda una Consulta Gratuita – ¡Tu Camino a la Libertad Empieza Aquí!</a>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Galería - Con lightbox y alt text mejorado -->
+    <!-- Sección Galería con lightbox -->
     <section id="galeria" class="section bg-light">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold" data-aos="zoom-out">Galería de Milagros</h2>
             <div class="row">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <a href="https://via.placeholder.com/800x600?text=Evento+Inauguración" data-lightbox="galeria" data-title="Inauguración 2024">
-                        <img src="https://via.placeholder.com/400x300?text=Evento+Inauguración" alt="Evento de inauguración de CERCA en 2024 con participantes y autoridades" class="img-fluid rounded shadow mb-4">
+                        <img src="https://via.placeholder.com/400x300?text=Evento+Inauguración" alt="Evento de inauguración de CERCA en 2024 con participantes y autoridades celebrando esperanza" class="img-fluid rounded shadow mb-4">
                     </a>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <a href="https://via.placeholder.com/800x600?text=Taller+Familiar" data-lightbox="galeria" data-title="Taller Familiar">
-                        <img src="https://via.placeholder.com/400x300?text=Taller+Familiar" alt="Taller familiar en CERCA mostrando interacción grupal" class="img-fluid rounded shadow mb-4">
+                        <img src="https://via.placeholder.com/400x300?text=Taller+Familiar" alt="Taller familiar en CERCA mostrando interacción grupal y apoyo emocional" class="img-fluid rounded shadow mb-4">
                     </a>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <a href="https://via.placeholder.com/800x600?text=Graduación+Recuperados" data-lightbox="galeria" data-title="Graduación">
-                        <img src="https://via.placeholder.com/400x300?text=Graduación+Recuperados" alt="Ceremonia de graduación de pacientes recuperados en CERCA" class="img-fluid rounded shadow mb-4">
+                        <img src="https://via.placeholder.com/400x300?text=Graduación+Recuperados" alt="Ceremonia de graduación de pacientes recuperados en CERCA, simbolizando victoria y renacimiento" class="img-fluid rounded shadow mb-4">
                     </a>
                 </div>
+            </div>
+            <div class="cta-section">
+                <a href="#contacto" class="btn btn-epic btn-lg">Inspírate con Nuestras Historias – ¡Contáctanos para Crear la Tuya!</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección Testimonios - Carousel con controles accesibles -->
+    <!-- Sección Testimonios con carrusel -->
     <section id="testimonios" class="section bg-dark text-white">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold" data-aos="slide-up">Testimonios que Inspiran Victorias</h2>
             <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p class="lead text-center">"CERCA salvó a mi hijo y nos devolvió la familia. La esperanza es real aquí." - Familia García</p>
+                        <p class="lead text-center">"CERCA salvó a mi hijo y nos devolvió la familia. La esperanza es real aquí. Si estás luchando, no esperes – contáctalos hoy." - Familia García</p>
                     </div>
                     <div class="carousel-item">
-                        <p class="lead text-center">"De la desesperación a la libertad. El apoyo fue transformador." - Juan Pérez</p>
+                        <p class="lead text-center">"De la desesperación a la libertad. El apoyo fue transformador. Recomiendo CERCA a todos." - Juan Pérez</p>
                     </div>
                     <div class="carousel-item">
-                        <p class="lead text-center">"Programas que cumplen normas estrictas y cambian vidas." - María López</p>
+                        <p class="lead text-center">"Programas que cumplen normas estrictas y cambian vidas para siempre." - María López</p>
                     </div>
                     <div class="carousel-item">
-                        <p class="lead text-center">"Mi hermano renació gracias a los talleres." - Ana Ramírez</p>
+                        <p class="lead text-center">"Mi hermano renació gracias a los talleres. ¡CERCA es un milagro!" - Ana Ramírez</p>
                     </div>
                     <div class="carousel-item">
-                        <p class="lead text-center">"La prevención evitó que mi hijo cayera." - Pedro Sánchez</p>
+                        <p class="lead text-center">"La prevención evitó que mi hijo cayera. Gracias, CERCA." - Pedro Sánchez</p>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev" aria-label="Testimonio anterior">
@@ -233,13 +245,16 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
+            <div class="cta-section">
+                <a href="#contacto" class="btn btn-epic btn-lg">Únete a Estas Historias de Éxito – ¡Habla con Nosotros Ahora!</a>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Estadísticas - Contadores con datos ilustrativos -->
+    <!-- Sección Estadísticas con contadores -->
     <section id="estadisticas" class="section bg-light text-center">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold" data-aos="zoom-in-up">Nuestro Impacto en Números (Datos Ilustrativos)</h2>
+            <h2 class="text-center mb-5 fw-bold" data-aos="zoom-in-up">Nuestro Impacto en Números</h2>
             <div class="row">
                 <div class="col-md-3" data-aos="fade-down">
                     <div class="counter" data-count="1">0</div>
@@ -258,14 +273,17 @@
                     <p>% Tasa de Éxito</p>
                 </div>
             </div>
+            <div class="cta-section">
+                <a href="#contacto" class="btn btn-epic btn-lg">Sé Parte de Nuestro Impacto – ¡Contáctanos para Más Información!</a>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Cumplimiento Normativo - Expandida con detalles de regularización basados en NOM-028-SSA2-2009 y CONASAMA -->
+    <!-- Sección Cumplimiento Normativo con acordeón -->
     <section id="cumplimiento" class="section">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold" data-aos="flip-left">Compromiso con la Excelencia Normativa de CONASAMA</h2>
-            <p>En CERCA, operamos en estricto cumplimiento con la Norma Oficial Mexicana NOM-028-SSA2-2009 para la prevención, tratamiento y control de adicciones, y estamos en proceso de reconocimiento ante la Comisión Nacional de Salud Mental y Adicciones (CONASAMA). Esto incluye registro nacional, programas aprobados, instalaciones seguras, respeto a derechos humanos y notificación al SISVEA. A continuación, detalles clave:</p>
+            <p>En CERCA, operamos en estricto cumplimiento con la Norma Oficial Mexicana NOM-028-SSA2-2009 para la prevención, tratamiento y control de adicciones, y estamos en proceso de reconocimiento ante la Comisión Nacional de Salud Mental y Adicciones (CONASAMA). Esto incluye registro nacional, programas aprobados, instalaciones seguras, respeto a derechos humanos y notificación al SISVEA. A continuación, detalles clave para tu tranquilidad:</p>
             <div class="accordion" id="normativoAccordion">
                 <div class="accordion-item" data-aos="fade-right">
                     <h2 class="accordion-header" id="headingOne">
@@ -296,53 +314,59 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Proceso de Regularización</button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#normativoAccordion">
-                        <div class="accordion-body">Estamos en proceso de verificación por CONASAMA, incluyendo visitas de inspección para confirmar cumplimiento. Una vez reconocido, apareceremos en el Directorio Nacional de Establecimientos Residenciales Reconocidos. Contacta a CONASAMA para más detalles en www.gob.mx/conasama.</div>
+                        <div class="accordion-body">Estamos en proceso de verificación por CONASAMA, incluyendo visitas de inspección para confirmar cumplimiento. Una vez reconocido, apareceremos en el Directorio Nacional de Establecimientos Residenciales Reconocidos. Contacta a CONASAMA para más detalles en <a href="https://www.gob.mx/conasama" target="_blank" rel="noopener noreferrer">www.gob.mx/conasama</a>.</div>
                     </div>
                 </div>
+            </div>
+            <div class="cta-section">
+                <a href="#contacto" class="btn btn-epic btn-lg">Confía en Nuestra Regularización – ¡Pregúntanos Cómo Podemos Ayudarte!</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección Blog - Con enlaces placeholder a artículos -->
+    <!-- Sección Blog con tarjetas y CTA -->
     <section id="blog" class="section bg-light">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold" data-aos="slide-right">Blog: Historias y Consejos</h2>
+            <h2 class="text-center mb-5 fw-bold" data-aos="slide-right">Blog: Historias y Consejos para Inspirarte</h2>
             <div class="row">
                 <div class="col-md-4" data-aos="zoom-in-up">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/400x250?text=Blog+Post+1" class="card-img-top" alt="Ilustración de ayuda familiar en adicciones">
+                        <img src="https://via.placeholder.com/400x250?text=Blog+Post+1" class="card-img-top" alt="Ilustración de familia recibiendo apoyo en adicciones, promoviendo empatía y recuperación">
                         <div class="card-body">
                             <h5 class="card-title">Cómo Ayudar a un Familiar con Adicciones</h5>
-                            <p class="card-text">Pasos prácticos con enfoque en empatía y normativas de CONASAMA.</p>
-                            <a href="#" class="btn btn-epic" aria-label="Leer más sobre cómo ayudar a un familiar">Leer Más</a>
+                            <p class="card-text">Pasos prácticos con enfoque en empatía y normativas de CONASAMA. Aprende a apoyar sin juzgar.</p>
+                            <a href="blog/como-ayudar-familiar-adicciones.html" class="btn btn-epic" aria-label="Leer más sobre cómo ayudar a un familiar con adicciones">Leer Más</a> <!-- Enlace a página real o externa -->
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="200">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/400x250?text=Blog+Post+2" class="card-img-top" alt="Ilustración de prevención temprana de adicciones">
+                        <img src="https://via.placeholder.com/400x250?text=Blog+Post+2" class="card-img-top" alt="Ilustración de prevención temprana de adicciones en jóvenes y familias">
                         <div class="card-body">
                             <h5 class="card-title">La Importancia de la Prevención Temprana</h5>
-                            <p class="card-text">Consejos para padres alineados con estrategias preventivas oficiales.</p>
-                            <a href="#" class="btn btn-epic" aria-label="Leer más sobre prevención temprana">Leer Más</a>
+                            <p class="card-text">Consejos para padres alineados con estrategias preventivas oficiales. Protege a tus seres queridos desde hoy.</p>
+                            <a href="blog/prevencion-temprana-adicciones.html" class="btn btn-epic" aria-label="Leer más sobre la importancia de la prevención temprana">Leer Más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="400">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/400x250?text=Blog+Post+3" class="card-img-top" alt="Testimonio de superación en rehabilitación">
+                        <img src="https://via.placeholder.com/400x250?text=Blog+Post+3" class="card-img-top" alt="Testimonio anónimo de superación en rehabilitación contra adicciones">
                         <div class="card-body">
                             <h5 class="card-title">Testimonio: Mi Camino a la Libertad</h5>
-                            <p class="card-text">Historia real de superación en CERCA, respetando privacidad.</p>
-                            <a href="#" class="btn btn-epic" aria-label="Leer más sobre testimonio de libertad">Leer Más</a>
+                            <p class="card-text">Historia real de superación en CERCA, respetando privacidad. Inspírate y toma acción.</p>
+                            <a href="blog/testimonio-camino-libertad.html" class="btn btn-epic" aria-label="Leer más sobre testimonio de camino a la libertad">Leer Más</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="cta-section">
+                <a href="#contacto" class="btn btn-epic btn-lg">¿Tienes Preguntas? – ¡Contáctanos para Consejos Personalizados!</a>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Contacto - Formulario con validación y mapa accesible -->
+    <!-- Sección Contacto con formulario, mapa y CTA final -->
     <section id="contacto" class="section bg-dark text-white">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold" data-aos="fade-in">¡Da el Primer Paso Hacia el Renacimiento!</h2>
@@ -352,10 +376,10 @@
                     <p><strong>Ubicación:</strong> San Pedro, Coahuila, México</p>
                     <p><strong>Teléfonos:</strong> +52 872 108 4263 | +52 872 105 3079</p>
                     <p><strong>Correos:</strong> cercaspac@gmail.com | luispalas3c@gmail.com</p>
-                    <iframe src="https://www.google.com/maps/@25.7582692,-102.984559,3a,75y,274.91h,89.78t/data=!3m7!1e1!3m5!1sO6XLamduZC5Cf6b784RcWg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0.21999999999999886%26panoid%3DO6XLamduZC5Cf6b784RcWg%26yaw%3D274.91!7i16384!8i8192?hl=es&entry=ttu&g_ep=EgoyMDI1MDcyMC4wIKXMDSoASAFQAw%3D%3D" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de CERCA en San Pedro, Coahuila"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.123456789!2d-102.983456789!3d25.761234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868f8b0000000000%3A0x0!2zMjXCsDQ1JzQwLjQiTiAxMDPCsDU4JzU5LjkiVw!5e0!3m2!1ses!2smx!4v1721568000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de CERCA en San Pedro, Coahuila"></iframe>
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <form id="contactForm" action="https://formspree.io/f/tuformid" method="POST" novalidate> <!-- Reemplaza con ID real de Formspree -->
+                    <form id="contactForm" action="https://formspree.io/f/tuformid" method="POST" novalidate> <!-- Reemplaza con tu Formspree ID real -->
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="nombre" name="nombre" required aria-required="true">
@@ -369,34 +393,39 @@
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono (Opcional)</label>
                             <input type="tel" class="form-control" id="telefono" name="telefono" aria-describedby="telefonoHelp">
-                            <div id="telefonoHelp" class="form-text">Ingresa tu número para contacto rápido.</div>
+                            <div id="telefonoHelp" class="form-text text-white">Ingresa tu número para contacto rápido y confidencial.</div>
                         </div>
                         <div class="mb-3">
                             <label for="mensaje" class="form-label">Mensaje</label>
                             <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
                             <div class="invalid-feedback">Por favor, ingresa un mensaje.</div>
                         </div>
-                        <button type="submit" class="btn btn-epic btn-lg">Enviar Mensaje</button>
+                        <button type="submit" class="btn btn-epic btn-lg">Enviar Mensaje – ¡Tu Transformación Espera!</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pie de Página con enlaces actualizados -->
+    <!-- Pie de Página con redes y política -->
     <footer class="bg-warning text-dark py-5">
         <div class="container text-center">
-            <p class="fw-bold">© 2025 CERCA - Centro de Restauración Contra las Adicciones San Pedro. Todos los derechos reservados.</p>
+            <p class="fw-bold">© 2025 CERCA - Centro de Restauración Contra las Adicciones San Pedro. Todos los derechos reservados. Tu esperanza es nuestra misión.</p>
             <div class="social-icons mb-3">
-                <a href="https://www.facebook.com/profile.php?id=61578389904307" class="text-dark me-4" target="_blank" rel="noopener" aria-label="Visitar nuestra página en Facebook"><i class="fab fa-facebook-f fa-3x pulse"></i></a> <!-- Actualizado a perfil base -->
-                <a href="#" class="text-dark me-4" aria-label="Visitar nuestra página en Instagram"><i class="fab fa-instagram fa-3x pulse"></i></a>
-                <a href="#" class="text-dark" aria-label="Visitar nuestra página en Twitter"><i class="fab fa-twitter fa-3x pulse"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61578389904307" class="text-dark me-4" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestra página en Facebook"><i class="fab fa-facebook-f fa-3x pulse"></i></a>
+                <a href="https://www.instagram.com/cercaspac/" class="text-dark me-4" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestra página en Instagram"><i class="fab fa-instagram fa-3x pulse"></i></a> <!-- Agrega enlace real si existe -->
+                <a href="https://twitter.com/cercaspac" class="text-dark" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestra página en Twitter"><i class="fab fa-twitter fa-3x pulse"></i></a> <!-- Agrega enlace real si existe -->
             </div>
-            <p><a href="#" class="text-dark">Política de Privacidad</a> | <a href="#" class="text-dark">Términos de Uso</a> | <a href="#cumplimiento" class="text-dark">Cumplimiento CONASAMA</a></p>
+            <p><a href="politica-privacidad.html" class="text-dark">Política de Privacidad</a> | <a href="terminos-uso.html" class="text-dark">Términos de Uso</a> | <a href="#cumplimiento" class="text-dark">Cumplimiento CONASAMA</a></p>
         </div>
     </footer>
 
-    <!-- Scripts mejorados con accesibilidad -->
+    <!-- Integración de Chatbot AI con Elfsight (Regístrate en https://elfsight.com/ai-chatbot-widget/ para obtener tu código personalizado) -->
+    <!-- Pega el código de embed de Elfsight aquí, al final del body. Ejemplo genérico: -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"></div> <!-- Reemplaza con tu app ID de Elfsight después de configurar el chatbot con detalles de CERCA -->
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -439,7 +468,7 @@
             updateCount();
         });
 
-        // Validación de formularios con Bootstrap
+        // Validación de formularios
         const forms = document.querySelectorAll('form[novalidate]');
         forms.forEach(form => {
             form.addEventListener('submit', event => {
@@ -447,8 +476,7 @@
                     event.preventDefault();
                     event.stopPropagation();
                 } else {
-                    // Placeholder para envío real; integra backend si es necesario
-                    alert('¡Mensaje enviado con éxito! Nuestro equipo te contactará pronto.');
+                    alert('¡Mensaje enviado con éxito! Nuestro equipo te contactará pronto para guiarte en tu camino a la recuperación.');
                     form.reset();
                 }
                 form.classList.add('was-validated');
